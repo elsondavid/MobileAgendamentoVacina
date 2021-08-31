@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="MobileAgendamento.Views.PickUpPatientToScheduleTheVaccinePage">
+    <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand" >
+        <Label>Digite o CPF para buscar</Label>
+        <Entry Placeholder="Cpf" Text="{Binding CpfSearch.Value}"/>
+        <Button Text="Buscar" Command="{Binding SearchPatient}" />
+        <Entry Placeholder="Nome" Text="{Binding Name.Value}"/>
+        <Entry Placeholder="Email" Text="{Binding Email.Value}"/>
+        <Entry Placeholder="Senha" Text="{Binding Password.Value}"/>
+        <Entry Placeholder="Cpf" Text="{Binding Cpf.Value}"/>
+        <Button Text="Proximo" Command="{Binding SendCommand}" />
+
+    </StackLayout>
+
+</ContentPage>

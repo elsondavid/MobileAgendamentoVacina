@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="MobileAgendamento.Views.VaccinePage">
+    <StackLayout HorizontalOptions="Center" VerticalOptions="CenterAndExpand" >
+        <Label>Cadastre a vacina</Label>
+
+        <Entry Placeholder="Fabricante" Text="{Binding Manufacturer.Value}"/>
+
+        <Label Text="Data de fabricação"/>
+        <Entry Placeholder="Data de Fabricação" Text="{Binding ManufacturingDate.Value}"/>
+        <Entry Placeholder="Data de validade" Text="{Binding ExpirationDate.Value}"/>
+        <Entry Placeholder="Descrição" Text="{Binding Description.Value}"/>
+
+        <Button Text="Salvar" Command="{Binding SendCommand}" />
+    </StackLayout>
+
+</ContentPage>
